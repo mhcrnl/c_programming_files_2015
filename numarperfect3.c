@@ -9,17 +9,21 @@ int perfectNumber(int n1){
     }
 
     if (sum==n1)
-        printf("%d este un numar perfect.", i);
+        printf("%d este un numar perfect.\n", i);
     else
-        printf("%d nu este numar perfect.",i);
+        printf("%d nu este numar perfect.\n",i);
 
     return i;
 }
 
 int main(){
     int n;
-    printf("introduce-ti un numar: ");
-    scanf("%d", &n);
-    perfectNumber(n);
-    //printf("Afisare numar perfect %d.", perfectNumber(n));
+    printf("Introduce-ti un numar(q pentru a inchide): ");
+    while(scanf("%d", &n)==1){
+        perfectNumber(n);
+        printf("Introduce-ti un numar (q pentru a inchide): ");
+    }
+    printf("LA REVEDERE!");
+    return 0;
 }
+
