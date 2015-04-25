@@ -1,0 +1,15 @@
+15:30:48 **** Incremental Build of configuration Debug for project 26linkedlist.c ****
+make all 
+Building file: ../src/26linkedlist.c.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/26linkedlist.c.d" -MT"src/26linkedlist.c.d" -o "src/26linkedlist.c.o" "../src/26linkedlist.c.c"
+Finished building: ../src/26linkedlist.c.c
+ 
+Building target: 26linkedlist.c
+Invoking: GCC C Linker
+gcc  -o "26linkedlist.c"  ./src/26linkedlist.c.o   
+Finished building target: 26linkedlist.c
+ 
+
+15:30:49 Build Finished (took 600ms)
+
