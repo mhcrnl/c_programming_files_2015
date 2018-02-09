@@ -1,0 +1,45 @@
+/*
+ ============================================================================
+ Name        : 28indexApartament.c
+ Author      : mihai cornel
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+struct index{
+	int apacaldabuc;
+	int aparecebuc;
+	int apacaldabaie;
+	int aparecebaie;
+	int gaze;
+
+	struct index *next;
+};
+
+typedef struct index recent;
+
+int main(void) {
+	recent *curr, *head;
+	int i;
+	head = NULL;
+	puts("!!!Index contori apartament!!!"); /* prints !!!Hello World!!! */
+	puts("Introduce-ti un numar: ");
+	while(scanf("%d", &i)==1){
+		curr=(recent*)malloc(sizeof(recent));
+		puts("Introduce-ti index Apa Calda Bucatarie");
+		scanf("%d", &curr->apacaldabuc);
+
+		puts("introduce-ti un numar(q to quit): ");
+		scanf("%d", &i);
+
+	}
+
+
+
+	return EXIT_SUCCESS;
+}

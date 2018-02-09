@@ -1,0 +1,65 @@
+/*
+ ============================================================================
+ Name        : 28indexApartament.c
+ Author      : mihai cornel
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+struct index{
+	int apacaldabuc;
+	int aparecebuc;
+	int apacaldabaie;
+	int aparecebaie;
+	int gaze;
+
+	struct index *next;
+};
+
+typedef struct index recent;
+
+int main(void) {
+	recent *curr, *head;
+	int i;
+	head = NULL;
+	puts("!!!Index contori apartament!!!"); /* prints !!!Hello World!!! */
+	puts("Introduce-ti un numar: ");
+	while(scanf("%d", &i)==1){
+		curr=(recent*)malloc(sizeof(recent));
+
+		puts("Introduce-ti index Apa Calda Bucatarie: ");
+		scanf("%d", &curr->apacaldabuc);
+
+		puts("Introduce-ti index Apa Rece Bucatarie: ");
+		scanf("%d", &curr->aparecebuc);
+
+		puts("Introduce-ti index Apa Calda Baie: ");
+		scanf("%d", &curr->apacaldabaie);
+
+		puts("Introduce-ti index Apa Rece Baie: ");
+		scanf("%d", &curr->aparecebaie);
+
+		puts("Introduce-ti index gaze: ");
+		scanf("%d", &curr->gaze);
+
+		curr->next = head;
+		head = curr;
+
+		puts("Introduce-ti un numar(q to quit): ");
+		//scanf("%d", &i);
+
+	}
+	curr = head;
+	while(curr){
+		printf("%d, %d, ", curr->apacaldabaie, curr->apacaldabuc);
+		curr= curr->next;
+	}
+
+
+	return EXIT_SUCCESS;
+}

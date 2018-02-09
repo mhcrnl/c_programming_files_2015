@@ -1,0 +1,22 @@
+16:26:41 **** Incremental Build of configuration Debug for project 27linkedlistIRAC ****
+make all 
+Building file: ../src/27linkedlistIRAC.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/27linkedlistIRAC.d" -MT"src/27linkedlistIRAC.d" -o "src/27linkedlistIRAC.o" "../src/27linkedlistIRAC.c"
+../src/27linkedlistIRAC.c: In function ‘main’:
+../src/27linkedlistIRAC.c:21:15: warning: unused variable ‘n’ [-Wunused-variable]
+  struct node *n;
+               ^
+../src/27linkedlistIRAC.c:20:9: warning: unused variable ‘num’ [-Wunused-variable]
+  int i, num;
+         ^
+Finished building: ../src/27linkedlistIRAC.c
+ 
+Building target: 27linkedlistIRAC
+Invoking: GCC C Linker
+gcc  -o "27linkedlistIRAC"  ./src/27linkedlistIRAC.o   
+Finished building target: 27linkedlistIRAC
+ 
+
+16:26:42 Build Finished (took 760ms)
+

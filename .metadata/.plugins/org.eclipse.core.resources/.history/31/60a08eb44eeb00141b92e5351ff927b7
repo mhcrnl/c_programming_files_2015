@@ -4,7 +4,7 @@
  Author      : mihai cornel
  Version     :
  Copyright   : Your copyright notice
- Description : http://www.cprogramming.com/snippets/source-code/singly-linked-list-insert-remove-add-count
+ Description : Hello World in C, Ansi-style
  ============================================================================
  */
 
@@ -24,7 +24,7 @@ int main(void) {
 	while(1){
 		puts("Lista operatiilor disponibile:");
 
-		if(scanf("%d ", &i)<=0){
+		if(scanf("%d, &i")<=0){
 			puts("Introduce-ti numai numere intregi.");
 			exit(0);
 		}else{

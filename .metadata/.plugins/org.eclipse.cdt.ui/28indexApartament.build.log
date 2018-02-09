@@ -1,0 +1,15 @@
+17:52:46 **** Incremental Build of configuration Debug for project 28indexApartament ****
+make all 
+Building file: ../src/28indexApartament.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/28indexApartament.d" -MT"src/28indexApartament.d" -o "src/28indexApartament.o" "../src/28indexApartament.c"
+Finished building: ../src/28indexApartament.c
+ 
+Building target: 28indexApartament
+Invoking: GCC C Linker
+gcc  -o "28indexApartament"  ./src/28indexApartament.o   
+Finished building target: 28indexApartament
+ 
+
+17:52:47 Build Finished (took 800ms)
+

@@ -1,0 +1,27 @@
+/*
+ ============================================================================
+ Name        : 28indexApartament.c
+ Author      : mihai cornel
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+struct index{
+	int apacaldabuc;
+	int aparecebuc;
+	int apacaldabaie;
+	int aparecebaie;
+	int gaze;
+
+	struct index *next;
+};
+
+int main(void) {
+	puts("!!!iIndex contori apartament!!!"); /* prints !!!Hello World!!! */
+	return EXIT_SUCCESS;
+}
